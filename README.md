@@ -7,7 +7,8 @@ This tool is designed to help bug bounty hunters and penetration testers detect 
 3. If introspection is disabled, it attempts a GET query to find the schema.
 4. If the GET query doesn't work, it tries URL Encoding.
 
-![image](https://github.com/viralvaghela/graphypy/assets/34627404/ffe48d43-d3e6-465e-bbda-feac1c7201ab)
+![image](https://github.com/viralvaghela/graphypy/assets/34627404/0a81a129-c19c-4f4e-b669-006b0e972ebc)
+
 
 ### ToDo
 [ ] Allows users to check common mutations once a valid GraphQL endpoint is detected. and displays the results of the mutation checks at the end.
