@@ -10,7 +10,7 @@ This tool is designed to help bug bounty hunters and penetration testers detect 
 ![image](https://github.com/viralvaghela/graphypy/assets/34627404/ffe48d43-d3e6-465e-bbda-feac1c7201ab)
 
 ### ToDo
-[ ]This tool also allows users to check common mutations once a valid GraphQL endpoint is detected. It displays the results of the mutation checks at the end.
+[ ] Allows users to check common mutations once a valid GraphQL endpoint is detected. and displays the results of the mutation checks at the end.
 
 ## Usage
 
