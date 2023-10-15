@@ -2,59 +2,8 @@ import sys
 import requests
 import urllib.parse
 from colorama import Fore, Style
+from endpoints_worlist import endpoints
 
-endpoints = [
-    "/graphql",
-    "/api/graphql",
-    "/graphql/v1",
-    "/v1/graphql",
-    "/v2/graphql",
-    "/v3/graphql",
-    "/v4/graphql",
-    "/v5/graphql",
-    "/graphql-api",
-    "/api/v1/graphql",
-    "/api/v2/graphql",
-    "/graphql/v2",
-    "/graphql/v3",
-    "/graphql/v4",
-    "/graphql/v5",
-    "/v1/api/graphql",
-    "/v2/api/graphql",
-    "/v3/api/graphql",
-    "/v4/api/graphql",
-    "/v5/api/graphql",
-    "/data/graphql",
-    "/v1/data/graphql",
-    "/v2/data/graphql",
-    "/v3/data/graphql",
-    "/v4/data/graphql",
-    "/v5/data/graphql",
-    "/api/data/graphql",
-    "/api/v1/data/graphql",
-    "/api/v2/data/graphql",
-    "/api/v3/data/graphql",
-    "/api/v4/data/graphql",
-    "/api/v5/data/graphql",
-    "/data/api/graphql",
-    "/data/v1/graphql",
-    "/data/v2/graphql",
-    "/data/v3/graphql",
-    "/data/v4/graphql",
-    "/data/v5/graphql",
-    "/v1/data/api/graphql",
-    "/v2/data/api/graphql",
-    "/v3/data/api/graphql",
-    "/v4/data/api/graphql",
-    "/v5/data/api/graphql",
-    "/api/v1/data/api/graphql",
-    "/api/v2/data/api/graphql",
-    "/api/v3/data/api/graphql",
-    "/api/v4/data/api/graphql",
-    "/api/v5/data/api/graphql",
-    "/data/v1/api/graphql",
-    "/data/v2/api/graphql"
-]
 
 introspection_query = '''
     {__schema{queryType{name}mutationType{name}subscriptionType{name}types{...FullType}directives{name description locations args{...InputValue}}}}fragment FullType on __Type{kind name description fields(includeDeprecated:true){name description args{...InputValue}type{...TypeRef}isDeprecated deprecationReason}inputFields{...InputValue}interfaces{...TypeRef}enumValues(includeDeprecated:true){name description isDeprecated deprecationReason}possibleTypes{...TypeRef}}fragment InputValue on __InputValue{name description type{...TypeRef}defaultValue}fragment TypeRef on __Type{kind name ofType{kind name ofType{kind name ofType{kind name ofType{kind name ofType{kind name ofType{kind name ofType{kind name}}}}}}}}'''
