@@ -1,8 +1,7 @@
 endpoints = [
-    "/graphql",
-    "/api/graphql",
     "/graphql/v1",
-    "/v1/graphql",
+    "/graphql",
+    "/api"
     "/v2/graphql",
     "/v3/graphql",
     "/v4/graphql",
