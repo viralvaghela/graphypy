@@ -11,7 +11,7 @@ This tool is designed to help bug bounty hunters and penetration testers detect 
 
 
 ### ToDo
-[ ] Allows users to check common mutations once a valid GraphQL endpoint is detected. and displays the results of the mutation checks at the end.
+- [ ] Allows users to check common mutations once a valid GraphQL endpoint is detected. and displays the results of the mutation checks at the end.
 
 ## Usage
 
@@ -22,5 +22,8 @@ pip install requirements.txt
 python graphypy.py URL
 ```
 Note: You might need to install the necessary Python packages specified in the requirements file before running the script.
+
+## Bugs
+If you find any issues in the tool, Feel free to create an issue [here](https://github.com/viralvaghela/graphypy/issues/new) 
 
 Feel free to contribute and enhance the tool for better functionality and broader use cases.
